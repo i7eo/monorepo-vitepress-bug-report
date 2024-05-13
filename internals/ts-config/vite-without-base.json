@@ -1,0 +1,8 @@
+{
+  "display": "TSConfig Vite Without Base",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+
+    "types": ["node", "vitest"]
+  }
+}

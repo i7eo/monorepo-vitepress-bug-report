@@ -1,0 +1,16 @@
+{
+  "extends": ["../../tsconfig.package.json", "@mvbri7eo/ts-config/web.json"],
+  "compilerOptions": {
+    "customConditions": ["dev"],
+    "outDir": "dist"
+  },
+  "include": ["**/*"],
+  "exclude": [
+    "**/__tests__/**",
+    "**/tests/**",
+    "node_modules",
+    "**/dist",
+    "**/*.md",
+    "./vite.config.ts"
+  ]
+}

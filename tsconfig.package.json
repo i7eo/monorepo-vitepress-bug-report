@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@mvbri7eo/node-*": ["./packages.node/*/src"],
+      "@mvbri7eo/*": ["./packages.web/*/src"]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "display": "TSConfig Node",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+
+    "types": ["node"]
+  }
+}

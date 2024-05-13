@@ -1,0 +1,45 @@
+{
+  "name": "@mvbri7eo/playground",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer playground for @mvbri7eo!",
+  "type": "module",
+  "keywords": [
+    "vue",
+    "vue3",
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vitest",
+    "playground"
+  ],
+  "license": "MIT",
+  "author": "i7eo",
+  "scripts": {
+    "dev": "DEV=true vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "run-s \"lint:**\"",
+    "lint:prettier": "prettier . --write",
+    "clean": "run-s \"clean:**\"",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@mvbri7eo/meta": "workspace:*",
+    "@mvbri7eo/metas": "workspace:*",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "vite": "^5.2.11",
+    "vue-tsc": "^2.0.17"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

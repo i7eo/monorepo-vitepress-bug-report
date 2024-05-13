@@ -1,0 +1,35 @@
+{
+  "name": "@mvbri7eo/ts-config",
+  "version": "0.0.1",
+  "description": "🚀 The package offer ts-config for @mvbri7eo!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vitest",
+    "typescript",
+    "ts-config"
+  ],
+  "license": "MIT",
+  "author": "i7eo",
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "base.json",
+    "node-without-base.json",
+    "node.json",
+    "package.json",
+    "vite-without-base.json",
+    "vite.json",
+    "vitest-without-base.json",
+    "vitest.json",
+    "web-without-base.json",
+    "web.json"
+  ],
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@mvbri7eo/repository",
+  "private": true,
+  "packageManager": "pnpm@9.1.0",
+  "description": "🚀 A modern high-performance monorepo project with pnpm + turbo + changeset + vite!",
+  "type": "module",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vitest",
+    "tsup",
+    "esbuild"
+  ],
+  "license": "MIT",
+  "author": "i7eo",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "simple-git-hooks",
+    "dev": "turbo run dev --parallel --continue",
+    "dev:document": "turbo run dev --filter=document",
+    "dev:playground": "turbo run dev --filter=playground",
+    "build": "turbo run build",
+    "build:packages": "turbo run build --filter=\"./packages/**\"",
+    "build:node": "turbo run build --filter=\"./packages/node/**\"",
+    "build:web": "turbo run build --filter=\"./packages/web/**\"",
+    "build:document": "turbo run build --filter=document",
+    "build:playrgound": "turbo run build --filter=playrgound",
+    "test": "turbo run test",
+    "clean": "run-s \"clean:**\"",
+    "clean:workspace": "turbo run clean",
+    "clean:workspace:cache": "turbo run clean:cache",
+    "clean:root-cache": "rimraf .turbo && rimraf pnpm-lock.yaml && rimraf node_modules"
+  },
+  "devDependencies": {
+    "@mvbri7eo/ts-config": "workspace:*",
+    "@vitest/ui": "^1.6.0",
+    "jsdom": "^24.0.0",
+    "npm-run-all2": "^6.1.2",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.2",
+    "tsx": "^4.9.3",
+    "turbo": "^1.13.3",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "eslint",
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  }
+}

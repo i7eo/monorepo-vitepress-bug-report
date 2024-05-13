@@ -1,0 +1,15 @@
+{
+  "extends": ["../../tsconfig.package.json", "@mvbri7eo/ts-config/node.json"],
+  "compilerOptions": {
+    "composite": true,
+    "customConditions": ["dev"],
+    "outDir": "dist"
+  },
+  "exclude": [
+    "**/__tests__/**",
+    "**/tests/**",
+    "node_modules",
+    "**/dist",
+    "**/*.md"
+  ]
+}

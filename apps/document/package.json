@@ -1,0 +1,68 @@
+{
+  "name": "@mvbri7eo/document",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer document for @mvbri7eo!",
+  "type": "module",
+  "keywords": [
+    "vue",
+    "vue3",
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vitest",
+    "document"
+  ],
+  "license": "MIT",
+  "author": "i7eo",
+  "scripts": {
+    "tailwindcss:init": "pnpm exec tailwindcss init",
+    "dev": "DEV=true vitepress dev --port 10001",
+    "dev:max-size": "vitepress dev --port 10001 --max-old-space-size=50000",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "lint": "run-s \"lint:**\"",
+    "lint:prettier": "prettier . --write",
+    "clean": "run-s \"clean:**\"",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.11",
+    "medium-zoom": "^1.1.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss": "^3.4.3",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@mvbri7eo/meta": "workspace:*",
+    "@vite-pwa/vitepress": "^0.5.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@xiopmh-fe/vitepress-plugin-pagefind": "0.2.14",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
+    "fast-glob": "^3.3.2",
+    "feed": "^4.2.2",
+    "markdown-it": "^14.1.0",
+    "pagefind": "^1.1.0",
+    "postcss": "^8.4.38",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "sitemap-ts": "^1.6.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-inspect": "^0.8.4",
+    "vite-plugin-pwa": "^0.20.0",
+    "vitepress": "^1.1.4",
+    "workbox-window": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "display": "TSConfig Node Without Base",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+
+    "types": ["node"]
+  }
+}

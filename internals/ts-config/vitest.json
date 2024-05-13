@@ -1,0 +1,9 @@
+{
+  "display": "TSConfig Vitest",
+  "extends": "./web.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+
+    "types": ["node", "jsdom", "vitest/globals"]
+  }
+}

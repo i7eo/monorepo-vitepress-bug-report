@@ -1,0 +1,10 @@
+{
+  "display": "TSConfig Web",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowJs": true,
+
+    "lib": ["DOM", "DOM.Iterable", "ESNext"]
+  }
+}
