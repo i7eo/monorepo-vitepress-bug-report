@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@mvbri7eo/meta": "workspace:*",
+    "@mvbri7eo/metas": "workspace:*",
     "@vite-pwa/vitepress": "^0.5.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
