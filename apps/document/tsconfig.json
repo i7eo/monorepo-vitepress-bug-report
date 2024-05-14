@@ -1,16 +1,7 @@
 {
-  "extends": ["../../tsconfig.package.json", "@mvbri7eo/ts-config/web.json"],
-  "compilerOptions": {
-    "types": ["vite/client", "vitepress", "vite-plugin-pwa/client"],
-    "customConditions": ["dev"],
-    "outDir": "dist"
-  },
-  "include": ["**/*", "./.*/**/*"],
-  "exclude": [
-    "**/__tests__/**",
-    "**/tests/**",
-    "node_modules",
-    "**/dist",
-    "**/*.md"
-  ]
+  "references": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.web.json" }
+  ],
+  "files": []
 }

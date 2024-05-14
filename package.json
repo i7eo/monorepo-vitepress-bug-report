@@ -35,7 +35,6 @@
     "clean:root-cache": "rimraf .turbo && rimraf pnpm-lock.yaml && rimraf node_modules"
   },
   "devDependencies": {
-    "@mvbri7eo/ts-config": "workspace:*",
     "@vitest/ui": "^1.6.0",
     "jsdom": "^24.0.0",
     "npm-run-all2": "^6.1.2",

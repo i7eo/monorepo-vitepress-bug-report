@@ -1,0 +1,8 @@
+{
+  "extends": ["../../tsconfig.package.json", "@mvbri7eo/ts-config/node.json"],
+  "compilerOptions": {
+    "composite": true,
+    "customConditions": ["dev"]
+  },
+  "include": ["vite.config.ts"]
+}

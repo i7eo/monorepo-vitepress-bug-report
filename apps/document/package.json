@@ -20,7 +20,7 @@
   "scripts": {
     "tailwindcss:init": "pnpm exec tailwindcss init",
     "dev": "DEV=true vitepress dev --port 10001",
-    "dev:max-size": "vitepress dev --port 10001 --max-old-space-size=50000",
+    "dev:max-size": "DEV=true vitepress dev --port 10001 --max-old-space-size=50000",
     "build": "vitepress build",
     "serve": "vitepress serve",
     "lint": "run-s \"lint:**\"",
@@ -42,6 +42,7 @@
     "vite-plugin-inspect": "^0.8.4",
     "vite-plugin-pwa": "^0.20.0",
     "vitepress": "^1.1.4",
+    "@mvbri7eo/ts-config": "workspace:*"
   },
   "engines": {
     "node": ">=20",

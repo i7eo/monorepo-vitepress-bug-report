@@ -51,6 +51,9 @@
     "clean:cache": "rimraf .turbo && rimraf dist",
     "clean:deps": "rimraf node_modules"
   },
+  "devDependencies": {
+    "@mvbri7eo/ts-config": "workspace:*"
+  },
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
